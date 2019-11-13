@@ -5,6 +5,7 @@
     <title>Turboporadnik! Od zera do Fuhrera!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="legionmain.css">
+    <link rel="stylesheet" href="poradnik.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -15,12 +16,62 @@
         <h1 class="header">Projekt Legion.pl</h1>
       </div>
     </div>
+    <div class="container">
+      <div class="card card-body collapse" id="menugry" >
+        <h1 class="card-title">Główne Okno Gry</h1>
+        <h5 class="card-title">Górny panel</h5>
+        <img src="poradnik/1.1.jpg" class="card-img-top img-fluid" alt="1.1">
+        <p class="card-text">
+          Na samej górze mamy panel z głównymi informacjami
+          odnośnie stanu naszego kraju oraz zakładki dzięki którym może przejść do odpowiednich okien takich jak produkcja / techy itd.
+        </p>
+        <p class="card-text">
+          Od lewej surowce: energia / metal / materiały rzadkie / ropa. Pierwsze trzy są niezbędne do funkcjonowania naszego przemysłu, produkują je poszczególne prowincje, z ropy jak łatwo jest się domyśleć produkowane jest paliwo.
+        </p>
+        <p class="card-text">Za ikonką fabryki kryją się 3 tajemnicze liczby oddzielone slashem. Jest to wskaźnik potencjału przemysłowego państwa " Potencjał niewykorzystany ( marnowany ) / Potencjał bazowy / Potencjał Dostępny. Dlaczego bazowy i dostępny sie różnią będzie w dalszej części.
+        </p>
+        <p class="card-text">Dalej na prawo jest liczba jednostek zaopatrzenia jakimi może dysponować nasza armia oraz jednostki dostępnego paliwa i pieniądze. Wszystkie surowce, zaopatrzenie i pieniądze ograniczone limitem do 99999.
+        </p>
+        <p class="card-text">Później znajduje się manpower, jest to liczba rezerwistów możliwych do zaciągniecia pod broń. Wyrażona jest ona w tysiącach. Tak więc 882 MP = 882 000 rezerwistów. 1000 MP = 1 000 000 rezerwistów. Tak jak w innych grach paradoxów ilość MP zdobywanej co miesiąc zależna jest od ludności danej prowincji. Nie ma górnego limitu Smile
+        </p>
+        <p class="card-text">Następne są punkty dyplomatyczne / szpiedzy oraz stan % oficerów w armii ( max 140% ). Im jest ich więcej tym wojsko walczy efektywniej. Na samym końcu znajduje się poziom niezadowolenia i jedność narodowa
+        </p>
+        <h5 class="card-title">Mapa i tryby widoku</h5>
+        <img src="poradnik/1.2.jpg" class="card-img-top img-fluid" alt="1.1">
+        <p class="card-text">
+          <ol style="text-align: left">
+               <li>Uproszczona mapa terenu, podstawowy tryb. Dla mnie zbędny, mało czytelna.</li>
+               <li>Szczegółowa mapa terenu, ta powinna być używana chyba najczęściej. Widzimy dokładnie gdzie są równiny / lasy / wzgórza / góry. Każda jednostka ma inny modyfikator do walki w danym terenie. Poruszają się przez nie z różną prędkością oraz zmienia się ich skuteczność w boju. Przykładowo dywizje pancerne w górach mają 50% kary do skuteczności ataku. </li>
+               <li>Mapa polityczna, co by łatwiej było się połapać gdzie są granice naszego kraju.</li>
+               <li>Mapa pogodowa. Tak, pogoda ma wpływ na przebieg walk, minimalny ( można zmienić modami ), ale zawsze.</li>
+               <li>Mapa wywiadowcza, taka bardziej szczegółowa mgła wojny.</li>
+               <li>Mapa niezadowolenia / revolt risk. Tutaj prosto, im kolor bardziej oddalony od zielonego tym większe ryzyko buntu w danej prowincji. Warto dodać, że bunty w HoI3 są symboliczne. Nie grożą rozpadem kraju jak w serii EU. Jednak są wyjątkowo irytujące. Podstawowa dywizja piechoty / kawalerii / milicji poradzi sobie z każdym buntem.</li>
+               <li>Mapa dyplomatyczna, oznaczone są kraje sojusznicze i wrogie. </li>
+               <li>Mapa regionów. Małe prowincje połączone są w regionu. Nie ma to tutaj tak dużego znaczenia jak ma ono w następnej części. Gdzie prowincje straciły swoje nazwy na rzecz regionów.</li>
+               <li>Mapa zaopatrzenia. Tutaj też często będziemy spoglądać. Przedstawiony jest na niej ruch zaopatrzenia ze stolicy do każdej pojedynczej jednostki, każdego samolotu i każdego okrętu stacjonującego w porcie. </li>
+               <li>Mapa infrastruktury, czyli poziom rozbudowania autostradek i systemu kolejowego. Im większy poziom INFR w prowincji tym więcej zaopatrzenia jest w stanie jednego dnia przez nią przejechać. Jednostki szybciej sie poruszają i odzyskują więcej organizacji.</li>
+               <li>Cele strategiczne. Ważne punkty, zazwyczaj większe miasta, mają różne wartości. Zdobycie ich wymagane jest by kraj kapitulował. Państwo poddaje się gdy wartość SP ( strategic points ) przekroczy % jedności narodowej. Postęp kapitulacji widoczny jest w panelu dyplomacji. </li>
+               <li>Mapa sztabów generalnych. Szczegółowe omówienie później przy hierarchii armii.</li>
+               <li>Mapa lotnicza. Wyszczególnione zostają wszystkie lotniska oraz pokazany zasieg naszych samolotów.</li>
+               <li>Mapa morska. Tutaj podobnie, wyszczególnione porty i floty się w nich znajdujące.</li>
+               <li>Mapa sił. Prowincje na których są jakiekolwiek wojska zostają podświetlone.</li>
+               <li>Mapa surowców i przemysłu.</li>
+           </ol>
+        </p>
+
+
+
+
+
+      </div>
+
+    </div>
     <div class="btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
-      <button type="button" class="btn btn-secondary">1</button>
-      <button type="button" class="btn btn-secondary">2</button>
-      <button type="button" class="btn btn-secondary">2</button>
-      <button type="button" class="btn btn-secondary">2</button>
-      <button type="button" class="btn btn-secondary">2</button>
+      <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#menugry" aria-expanded="false" aria-controls="menugry">Menu gry</button>
+      <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">1</button>
+      <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">1</button>
+      <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">1</button>
+      <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">1</button>
 
       <div class="btn-group" role="group">
         <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -30,7 +81,8 @@
           <a class="dropdown-item" href="#">Dropdown link</a>
           <a class="dropdown-item" href="#">Dropdown link</a>
         </div>
-  </div>
-</div>
+      </div>
+    </div>
+
   </body>
 </html>

@@ -1,0 +1,20 @@
+.btn{
+  background-color:  #7e0505;
+  height: 70px;
+}
+.btn:hover{
+  background-color:  #7e4918;
+}
+.card{
+  text-align: center;
+}
+.btn-group-vertical{
+  position: fixed;
+  top: 120px;
+}
+.card-img-top{
+  text-align: center;
+}
+h5{
+  background-color: #7e0505;
+}
