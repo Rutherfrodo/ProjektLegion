@@ -10,14 +10,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </head>
-  <body>
+  <body >
     <div class="row sticky-top">
       <div class="col">
         <h1 class="header">Projekt Legion.pl</h1>
       </div>
     </div>
     <div class="container">
-      <div class="card card-body collapse" id="menugry" >
+      <div class="card card-body collapse " id="menugry" >
         <h1 class="card-title">Główne Okno Gry</h1>
         <h5 class="card-title">Górny panel</h5>
         <img src="poradnik/1.1.jpg" class="card-img-top img-fluid" alt="1.1">
@@ -38,7 +38,7 @@
         </p>
         <h5 class="card-title">Mapa i tryby widoku</h5>
         <img src="poradnik/1.2.jpg" class="card-img-top img-fluid" alt="1.1">
-        <p class="card-text">
+
           <ol style="text-align: left">
                <li>Uproszczona mapa terenu, podstawowy tryb. Dla mnie zbędny, mało czytelna.</li>
                <li>Szczegółowa mapa terenu, ta powinna być używana chyba najczęściej. Widzimy dokładnie gdzie są równiny / lasy / wzgórza / góry. Każda jednostka ma inny modyfikator do walki w danym terenie. Poruszają się przez nie z różną prędkością oraz zmienia się ich skuteczność w boju. Przykładowo dywizje pancerne w górach mają 50% kary do skuteczności ataku. </li>
@@ -57,18 +57,87 @@
                <li>Mapa sił. Prowincje na których są jakiekolwiek wojska zostają podświetlone.</li>
                <li>Mapa surowców i przemysłu.</li>
            </ol>
-        </p>
 
+        <h5 class="card-title">Prawy Dolny Panel</h5>
+        <img src="poradnik/1.3.jpg" class="card-img-top img-fluid" alt="1.1">
+        <ol style="text-align: left">
+              <li>wł/wył Battleplany</li>
+              <li>Kreator Battleplanów. Możemy tu sobie porysować trochę po mapie. Wyznaczyć potencjalne kierunki ataku. Przydatne na multi. Zamiast objaśniać ciężki scenariusz, po prostu rysujesz i udostepniasz sojusznikowi. Przydatne też do tworzenia notatek na single</li>
+              <li>Tabela punktów zwycięstwa. Przed rozpoczęciem rozgrywki można ustalić jakie cele muszą zrealizować strony by wygrać kampanię.</li>
+              <li>Tabela celów strategicznych. Coś jak misje w <b>Europa Universalis</b>. Spełnienie określonych warunków zapewnia nam bonusy.</li>
+              <li>Znajdź prowincję ( baaaaaaardzo przydatne )</li>
+          </ol>
 
+          <h5 class="card-title">Panel jednostek i bitew</h5>
+          <img src="poradnik/1.4.jpg" class="card-img-top img-fluid" style="width:50%;" alt="1.1">
+          <p class="card-text">
+           W prawym górnym rogu jest mały plusik. Po którego rozwinięciu ujrzymy wszystkie jednostki połączone w drzewka dowodzenia ( i nie ) oraz aktualnie trwające bitwy wszelkiego rodzaju. Można wyłączać poszczególne rodzaje wedle uznania. Będzie szczegółowo omówiony podczas budowy armii i walki.
+          </p>
 
 
 
       </div>
+      <div class="card card-body collapse " id="dyplomacja">
+        <h1 class="card-title">Dyplopmacja i handel</h1>
+        <img src="poradnik/2.1.jpg" class="card-img-top img-fluid" alt="2.1">
+        <p class="card-text">
+
+                W głównym oknie mamy przedstawione składy 3 sojuszy dostępnych w grze. Paski obok przestawiają potencjalną siłę sojuszu. Łatwo więc porównać, że samotna Rzesza jest słabsza od Aliantów czy Cominternu.
+          </p>
+        <p class="card-text">Klikając w nazwę sojuszu na górze na liście poniżej wyświetlą się kraje należące do wybranego. Przy każdym kraju widać jakie zagrożenia od dla nas generuje, oraz stan jego surowców. Klikając na surowce w panelu nad listą krajów można segregować od kraju który go najwięcej produkuje, do kraju który ma największy deficyt wybranego towaru.</p>
+        <p class="card-text">Każdy kraj posiada jakąś neutralność. W 1936 Rzesza ma tylko 60% neutralność, im jest ona mniejsza pozwala nam brać coraz lepsze prawa wojenne. Każde kolejne prawo coraz lepiej napędza przemysł ( zwiększa mnożnik między potencjałem podstawowym, a potencjałem dostępnym ). Przedstawione jest też państwo które jest największym zagrożeniem dla naszego. Na tą chwilę jest to UK. Ponieważ jest liderem wrogiego sojuszu z którym sąsiadujemy ( Francja, która jest w Aliantach ). Z czasem zmieni się to na ZSRR.</p>
+        <p class="card-text">Po prawej jest magiczny trójkącik w którym rozrzucone są wszystkie kraje w grze. Trójkąt ten pokazuje w stronę której frakcji kierują się poszczególne nacje. W dużym uproszczeniu, zazwyczaj gdy kraj już dojdzie do jednego z wierzchołków może zostać zwerbowany do frakcji. Wszystko jednak też zależy od poziomu neutralności tego kraju. Gdy jest ona zbyt duża, będzie to niemożliwe.</p>
+        <p class="card-text">Na kraje te można wpływać by kierowały się one w strone naszego wierzchołka. Służy do tego opcja Inlfuence Nation która jest dostępna po kliknięciu na dane państwo. Kosztuje ona 2 pkt dyplomatycznie miesięcznie. Jest możliwe że wszystkie 3 frakcje będą wywierały wpływ na dany kraj, np. Polskę. W takim wypadku będzie ona dryfować po środku. Niektóre z krajów mają z automatu narzucony "drift" w jedną ze stron. Jak np. Włochy, Japonia i USA.</p>
+
+        <h5 class="card-title">Opcje dyplomacji</h5>
+        <img src="poradnik/2.2.jpg" class="card-img-top img-fluid" alt="2.2">
+        <ol style="text-align: left">
+                <li>Declare War / Limited War
+                Tutaj opcje raczej jasne :Big Grin Jedynie Limited War, po wybraniu tej opcji walczymy sami. Do wojny nie są wzywani nasi sojusznicy.  Na czerwono zaznaczona też jest nasza neutralność 60% / 25% . Oznacza to, że wojnę będziemy mogli wypowiedzieć dopiero w momencie gdy nasza neutralność spadnie do 25%. </li>
+                <li>NAP czyli coś czego brakuje w EU4. Podpisywany jest na 8 miesięcy ( przykładowo od 1 Stycznia do 1 Września ) Oficjalnie zerwać go jednak można już po 6 miesiacach. Samo zawarcie kosztuje 5 pkt diplo i nie jest pewne że AI się zgodzi.</li>
+                <li>Gwarancja, gdy damy ją jakiemuś krajowi, a ten zostaje zaatakowany z automatu jesteśmy dołączani do wojny. </li>
+                <li>Prośba o przemarsz, bazowanie samolotów i floty. </li>
+                <li>Embargo, zrywa umowy handlowe.</li>
+                <li>Licencja. Bardzo ciekawa opcja, ale raczej na multi, z AI niestety ciężko się dogadać, albo nie chce sprzedać w ogóle, lub też daje tak wygórowane ceny, że można zbankrutować. Oczywiście używając cheatów na AI nie ma problemu by kupić od Rzeszy grając Polską korpus pancerny Tygrysów. Na multi często używane. Jeden kraj specjalizuje się w samolotach, innych w czołgach. I podsyłają sobie nawzajem licencje za darmo. Jest to też opcja służąca do przelewania pieniędzy między państwami podczas rozgrywki. Bo takiej opcji w tej grze nie zaimplementowano :Tongue Minusem jednostek na licencji jest to, że nie są one ulepszane. Gdy kraj u którego kupiliśmy licencję na czołgi odkryje kolejny poziom nasze niestety zostaną już na zawsze na poprzednim.</li>
+                <li>Allow Debt. Jeszcze mi się chyba nie zdarzyło by AI zgodził się na to. Pozwala nam w czasie wojny handlować z danym kraje "na krechę" którą trzeba spłacić po zakończeniu wojny.  Oczywiście przydatne w multi Wink</li>
+                <li>Offer Trade. Tutaj zawieramy umowy handlowe, omówione zostanie poniżej.</li>
+                <li>Lend-lease te opcje pozwalją przesyłać IC ( potencjał przemysłowy ) między krajami. Praktycznie bezpośrednio, przykładowo stany mają 500 efektywnego IC, po zaakceptowaniu LS przez UK są w stanie przesłać do nich wszystko już od następnego dnia. Ilość przesyłanego IC ustawia się w panelu produkcji, suwakiem. </li>
+            </ol>
+
+          <p class="card-text"> Korpusy ekspedycyjne, nie jest wyświetlona w tym momencie. Pojawia się w czasie wojny. Pozwala przesłać danemu krajowi pod komendę poszczególne dywizje, korpusy, armie, teatry. Żadnego limitu, oczywiście floty i lotnictwo też.</p>
+          <p class="card-text"> Jest też Offer Aliance i Invite to Faction tych opcji też tu brakuje ponieważ UK jest we wrogim sojuszu. Dodatkowo w oknie dyplomacji mamy podstawowe informacje o kraju. Z kim ma sojusz, komu dało gwarancję, puppety, z kim prowadzi wojnę. W zakładce relations są jego relacje z każdym innym państwem w grze. W zakładce Wargoals pokazane są cele do których dążą kraje w wojnie z wybranych krajem ( nie wiedziałem jak to inaczej nazwać ). Przykładowo ZSRR może dać na Polskę 3 wargole. Conquer Eastern Poland, Install Communism, make a Puppet. Więcej o wargoalach będzie później.  </p>
+          <h5 class="card-title">Handel</h5>
+
+            <p class="card-text">To jest jedna z ważniejszych rzeczy jeśli chodzi o przemysł. Bez handlu skończą nam się surowce. Chyba jedynie giganty jak ZSRR i USA nie są zagrożone utratą surowców i mogą całkowicie olać handlowanie. Cała reszta musi importować przynajmniej jeden z surowców. Zużycie surowców zwiększa się wraz ze wzrostem naszego IC. Tak więc na początku możemy nawet nie mieć deficytu, jednak po wbiciu lepszych praw i zwiększeniu ilości IC nawet dwukrotnie pojawią się problemy, a często w tym momencie większość krajów już nie chce z nami zawierać umów ( wojna ).</p>
+
+            <p class="card-text">Najważniejsza jest tutaj produkcja zaopatrzenia ( supplies )! Nie wolno przesadzać z suwakiem w produkcji. ZAOPATRZENIE TO GŁÓWNY TOWAR EKSPORTOWY krajów które mają deficyt surowców strategicznych. Sprzedając zaopatrzenie do gigantów takich jak ZSRR czy USA zarabiamy spore ilości pieniędzy. Odbywa się to oczywiście kosztem IC które musimy przeznaczyć na produkcję zaopatrzenia, a nie np. produkcję czołgów.  </p>
+            <p class="card-text"><p> W przypadku Rzeszy jedyny surowiec o który jesteśmy spokojni to energia. Prawie od razu dobija do pełnego stocku i rzadko z niego schodzi. Reszta to koszmar. Zmuszeni jesteśmy od startu importować metal, materiały rzadkie i ropę.  Nasza krajowa produkcja nie wystarcza na pokrycie potrzeb przemysłu i pomimo spore stocku ( 30% - 50% ) bez importu skończyło by się jeszcze przed wojną.  Najeżdżając myszką na surowce w górnym panelu widzimy ile samodzielnie produkujemy dziennie, ile importujemy / eksportujemy oraz finalny bilans czyli czy odkładamy do stocku czy też mamy deficyt. Wydobycie wewnętrzne można zwiększyć za pomocą odpowiednich technologii ( na modach są do tego specjalne budynki ), oraz poprzez podbijanie prowincji produkujących dany surowiec!</p>
+            <p class="card-text"><p>AI widząc że mamy deficyt surowców, a pieniądze na plusie od razu zaspami nas ofertami ( gorzej niż Arcy na steam ), ten okres trzeba cierpliwie przeczekać.  Podpisując umowę handlową z krajem zwiększamy nasze relacje o 10. Umowę podpisać możemy co kilka dni. Na start sprzedajemy do USA i ZSRR niewielkie ilości  (po 1 suppla ) podnosząc nasze relacje do 200. Dlaczego tak? W innym wypadku, gdy będziemy mieli za mało relacji nie sprzedadzą nam np. 50 jednostek ropy.  50 to maksymalna ilość jednostek jednego surowca przy jednej umowie możliwych do kupna. Możemy wybrać kilka surowców przy jednej umowie, jednak wtedy prawdopodobieństwo zaakceptowania przez AI spada. </p>
+            <img src="poradnik/2.3.jpg" class="card-img-top img-fluid" alt="2.2">
+            <p class="card-text">Tutaj jak widać pomimo małych relacji USA jest przychylne zgodzenia się nam sprzedać 50 metalu dziennie. Nie jest pewne, że zaakceptują tą ofertę. Zamiast likely może być jeszcze "maybe ( 50%? ) / impossible /  very likely ( 100% ) "</p>
+            <p class="card-text">Tak więc gdy już dobijemy te 200 relacji, zaczynami podpisywać umowy na kupno ropy / metalu / materiałów po maksymalnej ilości tak by nasz zapas rósł w dość przyzwoitym tempie, w przypadku Rzeszy, materiałów i metalu bijemy pod kurek bo na wojnie tracimy prawie cały import. Cały czas pilnujemy by sprzedawać odpowiednią ilość suppli by nasz zapas pieniędzy również rósł. Tutaj bezpieczne już będzie 20k - 25k</p>
+            <p class="card-text">Może się pojawić pytanie, ale dlaczego to głupie AI kupuje przez lata miliony ton tego suppla?? Właśnie nie jest głupie! Państwa AI mające pełno surowców sprzedając je mają często pełen stock dolarów i nie mają co z tym robić. Kupując od nas suppla zwalniają sobie IC którego nie muszą już przeznaczać na jego produkcję, a mogą przeznaczyć na inne rzeczy.</p>
+            <p class="card-text">Ostatnia ważna rzecz. Do handlu coś jest jeszcze potrzebne, skrzynki z metalem i beczki z ropą same oceanu nie przepłyną. Do transportu potrzebne są okręty które również produkujemy w panelu produkcji. Podczas wojny można je zatapiać, dlatego podczas walki z UK tak przydatne są U-Boot.  Przed łodziami podwodnymi niszczącymi nasze konwoje można sie bronić na kilka sposobów. Dobudowywać do konwojów okręty eskorty, obie opcje są obok siebie w panelu produkcji więc łatwo znaleźć.
+            Trasę każdego konwoju mamy na zaznaczoną na mapie zaopatrzeniowej i morskiej więc możemy posłać tam destroyery lub jeśli mamy ich nadmiar to lotniskowce. O tym że nam topią konwoje dowiemy sie z wyskakujących raportów, a miejsce te bedą odpowiednio zaznaczone na mapie morskiej.</p>
+            <h5 class="card-title">Optymalizacja Handlu</h5>
+            <p class="card-text">Relacje między państwami nie tylko wpływają czy dane państwa połączy sojusz wojskowy, pozwolenie na przemarsz i stacjonowanie wojsk czy też sprzedaż licencji. Wzajemne relacje mają bezpośrednie przełożenie na koszty wymiany handlowej. W grze multiplayer ta zależność praktycznie nie ma znaczenia. W przypadku gry singlowej, dla państw borykających się z deficytem surowcowym, może przynieść wiele korzyści. Na początku każdego scenariusza, relacje pomiędzy państwami mają wartość zero. Patrząc na koszt handlu, bez względu z kim chcemy handlować, koszt zakupu/sprzedaży surowców będzie taki sam.</p>
+            <p class="card-text">Dla przykładu poniżej mamy Niemcy w scenariuszu 1938. W momencie startu gry, Berlin może sprzedać zaopatrzenie ZSRR dokładnie za tyle samo co USA. Nie ma znaczenia, że z jednym państwem znajdujemy się na tym samym kontynencie oraz totalne różnimy się ustrojowo z oboma partnerami handlowymi. W obu przypadkach zysk ze sprzedaży jest taki sam. Podobnie będzie z zakupem od obu państw np. ropy. </p>
+           <img src="poradnik/2.4.jpg" class="card-img-top img-fluid" alt="2.2">
+            <br><br>
+          <img src="poradnik/2.5.jpg" class="card-img-top img-fluid" alt="2.2">
+            <p class="card-text">Sytuacja zmienia się diametralnie, gdy wzajemne relacje zmienią się z jednym z państw. Jak widać poniżej, Berlin trochę bardziej pokochał się z Moskwą, dzięki czemu koszt sprzedaży zaopatrzenia do ZSRR zmalał. Przy zakupie ropy przez Berlin byłoby tak samo. Relacje z USA nie zmieniły się i koszty handlowe pozostały na tym samym poziomie.</p>
+            <p class="card-text">Należy pamiętać, że pozytywne relacje między państwami wpływają na niższe ceny kupna/sprzedaży, natomiast im bardziej relacje są chłodne, handel staje się coraz droższy aż w końcu staje się niemożliwy.</p>
+            <img src="poradnik/2.6.jpg" class="card-img-top img-fluid" alt="2.2">
+            <p class="card-text">Powyższą zależność można wykorzystać w bardzo prosty sposób. Wspomniane Niemcy przy zastosowaniu wielokrotnych umów handlowych, polepszają sobie relacje z ZSRR. Dzięki temu po bardzo atrakcyjnych cenach, kupują ropę i metale rzadkie. Aby zniwelować ubytek złota w skarbcu oczywiście sprzedają głównie zaopatrzenie. Jednak nie robią tego do ZSRR tylko tam gdzie mogą zarobić najwięcej, czyli w tym przypadku do USA. Różnica w cenach dość szybko odbije się na wielkości skarbca
+            </p>
+            <p class="card-text">Inną formą optymalizacji handlu należy podjąć już na samym początku gry. Nie robimy tego pierwszego dnia ale drugiego, najpóźniej trzeciego. Ma to związek z mechaniką gry, która wszelkie decyzje „zatwierdza” o północy każdego dnia. Po dwóch, trzech dniach państwa AI mają już wykrystalizowane stany surowców i w tym momencie przechodzimy do działania. Klikania jest sporo ale warto. Po prostu po kolei próbujemy sprzedać każdemu państwu cokolwiek co uznajemy, że mamy w nadwyżce. Jedynym wyznacznikiem jest to czy państwo jest chętne do akceptacji takiej umowy. Jeśli dana umowa po jakimś czasie zostanie zerwana, próbujmy ponowić ją ale z mniejszymi wartościami. Oczywiście mając nadwyżkę surowców, można sobie darować taką ekwilibrystykę. Jednak zarobione w ten sposób złoto przyda się bardzo do zakupu zaopatrzenia. Jeśli umów na kupno zaopatrzenia jest dużo, to okaże się, że sami na ten cel nie wydajemy potencjału przemysłowego.
+            </p>
+      </div>
 
     </div>
-    <div class="btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
+    <div class="btn-group-vertical " role="group" aria-label="Button group with nested dropdown">
       <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#menugry" aria-expanded="false" aria-controls="menugry">Menu gry</button>
-      <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">1</button>
+      <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#dyplomacja" aria-expanded="false" aria-controls="dyplomacja">Dyplomacja</button>
       <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">1</button>
       <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">1</button>
       <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">1</button>
