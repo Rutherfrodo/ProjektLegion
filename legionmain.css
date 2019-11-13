@@ -1,0 +1,32 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(images/tlo.jpg);
+  background-attachment: fixed;
+  max-width: 1920px;
+  overflow-x: hidden;
+}
+.header,
+.socialmediatop{
+  text-align: center;
+  background-color: #7e0505;
+  color: #d2a10a;
+  height: 100px;
+}
+.main{
+  background-color: red;
+}
+.container{
+}
+.col{
+  padding: 10;
+}
+.karuzela{
+  margin-top: 30px;
+}
+.foot{
+  text-align: center;
+  background-color: #7e0505;
+  margin-top: 50px;
+  bottom: 0px;
+}
