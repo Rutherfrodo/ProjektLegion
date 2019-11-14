@@ -5,6 +5,8 @@
   height: 70px;
   text-align: left !important;
   color: #d2a10a;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 .btn:hover{
   background-color:  #d2a10a;
