@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script/poradnik.js" async></script>
   </head>
   <body >
     <div class="row sticky-top">
@@ -17,7 +18,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="card card-body collapse " id="menugry" >
+      <div class="card card-body" id="menugry" >
         <h1 class="card-title">Główne Okno Gry</h1>
         <h5 class="card-title">Górny panel</h5>
         <img src="poradnik/1.1.jpg" class="card-img-top img-fluid" alt="1.1">
@@ -77,7 +78,7 @@
 
 
       </div>
-      <div class="card card-body collapse " id="dyplomacja">
+      <div class="card card-body" id="dyplomacja">
         <h1 class="card-title">Dyplopmacja i handel</h1>
         <img src="poradnik/2.1.jpg" class="card-img-top img-fluid" alt="2.1">
         <p class="card-text">
@@ -133,14 +134,71 @@
             <p class="card-text">Inną formą optymalizacji handlu należy podjąć już na samym początku gry. Nie robimy tego pierwszego dnia ale drugiego, najpóźniej trzeciego. Ma to związek z mechaniką gry, która wszelkie decyzje „zatwierdza” o północy każdego dnia. Po dwóch, trzech dniach państwa AI mają już wykrystalizowane stany surowców i w tym momencie przechodzimy do działania. Klikania jest sporo ale warto. Po prostu po kolei próbujemy sprzedać każdemu państwu cokolwiek co uznajemy, że mamy w nadwyżce. Jedynym wyznacznikiem jest to czy państwo jest chętne do akceptacji takiej umowy. Jeśli dana umowa po jakimś czasie zostanie zerwana, próbujmy ponowić ją ale z mniejszymi wartościami. Oczywiście mając nadwyżkę surowców, można sobie darować taką ekwilibrystykę. Jednak zarobione w ten sposób złoto przyda się bardzo do zakupu zaopatrzenia. Jeśli umów na kupno zaopatrzenia jest dużo, to okaże się, że sami na ten cel nie wydajemy potencjału przemysłowego.
             </p>
       </div>
+      <div class="card card-body" id="produkcja">
+        <h1 class="card-title">Produkcja</h1>
+        <h5 class="card-title">Okno główne, opis podstaw</h5>
 
+        <p class="card-text">W zakładce produkcji znajduje się ogrom przydatnych informacji. Na samej górze praktycznie poza oknem znajdziemy spis zasobów strategicznych które wspierają nasz przemysł zapewniając odpowiednie bonusy. Wystarczy na nie najechać i wiemy która prowincja je generuje i jakie bonusy daje. Przykładowo łożyska. </p>
+        <img src="poradnik/3.1.jpg" class="card-img-top img-fluid" alt="3.1">
+          <p class="card-text">Po lewej stronie w głównym oknie mamy 3 zakładki. Pierwsza odpowiada za budowę dywizji, druga za lotnictwo, trzecia za flotę.</p>
+          <img src="poradnik/3.2.jpg" class="card-img-top img-fluid" alt="3.2">
+          <p class="card-text"> Zaraz pod przyciskiem kreatora dywizji jest menu budowy pojedynczych brygad ( dywizja składa się w podstawce z minimum 2 brygad, max 5 ). Produkowanie całej armii za pomocą brygad jest totalnie nieopłacalne, jednak potrzebne jeśli chcemy wyprodukować tylko kilka specjalistycznych brygad do uzupełnienia istniejących już jednostek. Dlaczego nieopłacalne? Cała dywizja złożona z 4 brygad kosztuje mniej IC niż suma IC każdej z brygad będących w jej składzie oddzielnie. </p>
+          <p class="card-text">Po prawej jest okienko budowy lotnisk. Czasami przydatne jeśli chcemy operować z jakiejś wyspy. Ogólnie jednak w podstawce nie ma jakiejś większej potrzeby rozbudowy lotnisk. Im większy poziom lotniska, tym więcej samolotów może być w nim naprawiane jednocześnie</p>
+          <p class="card-text">Na samym końcu, Naval Base, czyli porty. Tak samo jak z lotniskami, im większy poziom portu, tym więcej okrętów może być naprawionych w tym samym czasie. Tutaj fajnie jest mieć kilka w pogotowiu.
+            ( uwaga exploit? Chociaż większość legionistów uważa to za normę, opcję tę blokujemy w końcu w następnym modzie. Dalej działa na podstawce )
+            </p>
+          <p class="card-text"> Cokolwiek byście nie budowali zawsze są dostępne dwie opcje wyboru "ilości" produkcji. Serial i Parallel, czyli seryjnie i równolegle. Zwiększając ilość Parallel dajemy więcej jednostek do produkcji na raz, np 4 dywizje pancerne.
+            Natomiast ustawiając Serial 2 i Parallel 4, będziemy produkować 4 dywizje jednocześnie, jednak po skończeniu tych 4 na ich miejsce wskoczy właśnie druga partia ;Wink Ilość serii oznaczona jest w panelu produkcji jednostek cyfrą pomiędzy pod datą zakończenia produkcji, na screenie w samolotach +1.</p>
+          <p class="card-text"> Zaraz pod kreatorem dywizji i brygad jest 8 zakładek odpowiedzialnych za budynków, konwojów, eskorty oraz wsparcie ruchu podziemnego. </p>
+          <ol style="text-align: left">
+            <li>Fabryki, odpowiadają za nasz potencjał przemysłowy. 1 fabryka = 1 bazowy IC. Jeśli macie zamiar rozbudować trochę przemysł to opłaca sie to praktycznie tylko na początku rozgrywki ( 1936 )</li>
+            <li> Działa AA. Obowiązkowe w prowincji z dużą ilością fabryk ( zazwyczaj są ).</li>
+            <li>Radary, rozbudowane do 10 poziomu są naprawdę przydatne. Niestety też, bardzo wrażliwe na ataki bombowe / rakietowe. Radary w HoI3 działają na zasadzie wyłączenia mgły wojny na danym obszarze, tym większym, im większy poziom radarów w prowincji. Na 10 lvl ( maksymalny dla wszystkich budynków ) mamy wizję w okręgu o promieniu 400km. </li>
+            <li>Reaktory atamowe</li>
+            <li>Bazy do testów rakietowych. Odpowiadają za naszą zdolność produkcji rakiet balistycznych V1 i V2.</li>
+            <li>Konwoje które są wymagane do transportu zaopatrzenia i surowców.</li>
+            <li>Eskorta dla konwojów</li>
+            <li> Wsparcie ruchu podziemnego, opis dokładniejszy później. Ogólnie, mało przydatne. Jest w stanie ściągnąć na chwilę kilka jednostek z frontu przeciwnika, może zająć na chwile jakieś centrum przemysłowe.</li>
+          </ol>
+          <p class="card-text">Resztę dostępnych budynków musimy klikać "z mapy" wchodząc bezpośrednio na prowincję. </p>
+          <p class="card-text">Pod tym wszystkich mamy panel produkcji. Opiszę dokładny stan 15 Dywizji Pancernej będącej w produkcji. Po lewej na górze dokładna data zakończenia produkcji. Poniżej w procentach stopień pokrycia zapotrzebowania na IC. Mamy 100% więc robimy to najszybciej jak się da.
+                Mamy też ilość potrzebnego IC by utrzymać stałe tempo produkcji na 100%, czyli 19.93 IC. Zaraz obok 4 przyciski odpowiedzialne za układanie jednostek według priorytetu produkcji. Jednostki są samej górze są pierwsze w kolejce. Po prawej na końcu magiczny X do skasowania produkcji ( no kto by się spodziewał )</p>
+            <p class="card-text">Pod tym wszystkim mamy spis naszych HQ i ich zapotrzebowanie na jednostki. Można powiedzieć, że jest to zbędna opcja. Sami decydujemy o swoim buildzie Tongue
+                Na samym dole magiczny znacznik, automatic deployment. NIE KLIKAMY! Powoduje, że jednostki po wyprodukowaniu automatycznie są przydzielane przez AI. Nie ma żadnej kontroli gdzie one trafiają. </p>
+          <p class="card-text"> W tym fajnym panelu mamy dane odnośnie wszystkich surowców, ich dzienny przychód, oraz ilość posiadanych atomówek!
+            Zaraz obok tego, najważniejsze suwaczki w grze. Decydują rozdysponowaniu naszego IC. Zostawiamy to oczywiście na manual control, żadnego AI! Przy każdym suwaczku mamy zapotrzebowanie na IC.</p>
+            <ol style="text-align: left">
+                <li>Upgrady. Tutaj wpływ mają technologie, co z tego że wybadamy nowy silnik do czołgu czy też nowy model myśliwca. Trzeba to wszystko dostarczyć do jednostek. Warto pamiętać, że nie warto go ruszać powyżej zera na rok / 8 miesięcy przed wojną.
+                Dlaczego? Mamy rok 1936, przykładowo silnik model 1934. W technologiach odkrywamy model 1936. Od razu wysyłamy do jednostek, używamy IC. Odkrywamy zaraz potem model 1937, znowu używamy IC. Odkrywamy model 1938, to samo. Moglibyśmy to sobie oszczędzić i wydac IC tylko na wdrożenie do jednostek modelu 1938. Ponieważ wszystkie poprzednie i tak nie będą nawet używane, a zaoszczędzone IC możemy wydać na produkcję.</li>
+                <li>
+                 Reinforce. Podobna sprawa jak z "upgrejdami".  Nie opłaca się ruszać na kilka miesięcy przed wojną. Jednak to tylko część zapotrzebowania, prawdziwe szaleństwo zacznie się gdy w końcu przeciwnik zacznie stawiać opór i zaczniemy dostawać na froncie poważne straty. Zabitych żołnierzy i zniszczony sprzęt musimy przecież zastąpić! Zapotrzebowanie tutaj zmienia się wraz z intensywnością walk. </li>
+                <li>
+                Supplies. Produkcja zaopatrzenia dla naszej armii. Wielka armia, wymaga dużej ilości zaopatrzenia. Dodatkowo trzeba go też produkować na potrzeby handlu, o czym było wcześniej. By utrzymać w miarę dobry przyrost w stocku można trzymać 5 lub 10 IC ponad zapotrzebowanie. </li>
+                <li>
+                    Produkcja. Tutaj raczej oczywiste. Przeznaczamy jak najwięcej, bo od tego zależą nasze możliwości produkcyjne jednostek. Każda wyprodukowana jednostka danego typu zwiększa "practical" danego typu produkcji. Powoduje on, że dany sprzęt produkujemy szybciej i taniej! Jednak practical wzrasta skokowo, o daną wartość w momencie skończenia cyklu produkcji jednostki, a przez pozostały czas nieubłaganie spada. Do wglądu jest w zakładce technologii, o practicalu i techach będzie później. </li>
+                <li>
+                    Consumer goods. Tutaj prosto. ZAWSZE musimy trzymać minimum na wymaganej wartości. Każdy dzień gdy przeznaczamy mniej IC niż zapotrzebowanie zwiększa niezadowolenie ( dissent ) w państwie, który wpływa ujemnie na IC dostępny, 2% dissentu = -2% IC. Mogą wystąpić różne eventy zwiększające zapotrzebowanie na CG lub też zwiększające dissent do różnej wartości który opłaca się jak najszybciej zbić, kierując tu dużą ilość IC. </li>
+                <li>
+                    Lend - Lease. Tutaj decydujemy ile IC przeznaczamy dla innego kraju.
+                </li>
+            </ol>
+            <p class="card-text"> Szybko jeszcze odnośnie sterowania suwakami. Możemy je zablokować na danej wartości prawym przyciskiem myszy, dzięki temu nie będą się poruszać gdy zmieniamy inny. Można też przeskoczyć od razu do wartości zapotrzebowania po prostu klikając na nią!
+            </p>
+            <p class="card-text"><p>Pod tym wszystkim mamy spis wszystkich umów handlowych, możemy dokładnie sprawdzić co i za ile kupujemy, wystarczy najechać na daną ikonkę surowa, z łatwością możne je anulować klikając x.
+
+            Jest tam też, znajduje się panel konwojów. Mamy przedstawioną liczbę dostępnych statków i eskorty.
+            Opcję "Create convoy" o której będzie dokładniej w dalszym etapie ( zaopatrzenie na mapie ).
+            I lista wszystkich konwojów, aktywnych i nieaktywnych. Port macierzysty i docelowy. Na mapie morskiej i suppli mamy ich dokładną trasę.</p>
+
+
+      </div>
     </div>
     <div class="btn-group-vertical " role="group" aria-label="Button group with nested dropdown">
-      <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#menugry" aria-expanded="false" aria-controls="menugry">Menu gry</button>
-      <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#dyplomacja" aria-expanded="false" aria-controls="dyplomacja">Dyplomacja</button>
-      <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">1</button>
-      <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">1</button>
-      <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">1</button>
+      <button type="button" class="btn btn-secondary" onclick="menugry();">Menu gry</button>
+      <button type="button" class="btn btn-secondary" onclick="dyplomacja();">Dyplomacja</button>
+      <button type="button" class="btn btn-secondary" onclick="produkcja();">Produkcja</button>
+      <button type="button" class="btn btn-secondary">1</button>
+      <button type="button" class="btn btn-secondary">1</button>
 
       <div class="btn-group" role="group">
         <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
