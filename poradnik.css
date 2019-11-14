@@ -48,7 +48,10 @@ h5{
   transition: 0.3s;
   text-align: center;
 }
-
+/* TODO: Poprawa MENU wysuwanego
+  Zrobienie nagłówka
+  Edycja kart ( tło itp.) w index.html
+ */
 .sidenav a:hover {
   color: #f1f1f1;
 }
