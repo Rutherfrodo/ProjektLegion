@@ -5,6 +5,7 @@ function menugry() {
   document.getElementById("sklad").style.display = "none";
   document.getElementById("technologie").style.display = "none";
   document.getElementById("walka").style.display = "none";
+  window.scrollBy(0, -1 * window.pageYOffset ); //scroll do gory po zmianie karty
 }
 
 function dyplomacja() {
@@ -14,6 +15,7 @@ function dyplomacja() {
   document.getElementById("sklad").style.display = "none";
   document.getElementById("technologie").style.display = "none";
   document.getElementById("walka").style.display = "none";
+  window.scrollBy(0, -1 * window.pageYOffset );
 }
 function produkcja() {
   document.getElementById("produkcja").style.display = "block";
@@ -22,6 +24,7 @@ function produkcja() {
   document.getElementById("sklad").style.display = "none";
   document.getElementById("technologie").style.display = "none";
   document.getElementById("walka").style.display = "none";
+  window.scrollBy(0, -1 * window.pageYOffset );
 }
 function sklad() {
   document.getElementById("sklad").style.display = "block";
@@ -30,6 +33,7 @@ function sklad() {
   document.getElementById("produkcja").style.display = "none";
   document.getElementById("technologie").style.display = "none";
   document.getElementById("walka").style.display = "none";
+  window.scrollBy(0, -1 * window.pageYOffset );
 }
 function technologie() {
   document.getElementById("technologie").style.display = "block";
@@ -38,6 +42,7 @@ function technologie() {
   document.getElementById("produkcja").style.display = "none";
   document.getElementById("sklad").style.display = "none";
   document.getElementById("walka").style.display = "none";
+  window.scrollBy(0, -1 * window.pageYOffset );
 }
 function walka() {
   document.getElementById("walka").style.display = "block";
@@ -46,4 +51,5 @@ function walka() {
   document.getElementById("produkcja").style.display = "none";
   document.getElementById("sklad").style.display = "none";
   document.getElementById("technologie").style.display = "none";
+  window.scrollBy(0, -1 * window.pageYOffset );
 }
