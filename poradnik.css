@@ -8,11 +8,7 @@
 .card{
   text-align: center;
 }
-.btn-group-vertical{
-  position: fixed;
-  left:-200px;
-  top: 120px;
-}
+
 .card-img-top{
   text-align: center;
   width: 100%;
@@ -27,19 +23,21 @@ h5{
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  padding-top: 30px; /* Place content 60px from the top */
+  transition: 0.5s;
+  text-align: center;
 }
 /* The navigation menu links */
 .sidenav button {
+  max-height: 70px;
+  max-width: 200px;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 20px;
   display: block;
   transition: 0.3s;
+  text-align: center;
 }
 
 /* When you mouse over the navigation links, change their color */
