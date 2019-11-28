@@ -13,7 +13,7 @@ body{
  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
  position: fixed; /* Sticky/fixed navbar */
  width: 100%;
- color: #d2a10a;
+
  top: 0; /* At the top */
  z-index: 99;
 }
@@ -21,7 +21,7 @@ body{
 /* Style the navbar links */
 #navbar a {
  float: left;
- color: black;
+ color: #d2a10a;
  text-align: center;
  padding: 12px;
  text-decoration: none;
@@ -35,12 +35,14 @@ body{
  font-size: 35px;
  font-weight: bold;
  transition: 0.4s;
+ color: #d2a10a;
 }
 
 /* Links on mouse-over */
 #navbar a:hover {
- background-color: #ddd;
- color: black;
+ background-color: #580303;
+ color: #d2a10a;
+
 }
 
 /* Style the active/current link */
@@ -69,12 +71,8 @@ body{
  }
 }
 
-.header,
-.socialmediatop{
-  text-align: center;
-  background-color: #7e0505;
-  color: #d2a10a;
-  height: 100px;
+.container{
+  margin-top: 240px;
 }
 
 .karuzela{
