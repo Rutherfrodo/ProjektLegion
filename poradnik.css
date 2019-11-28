@@ -56,8 +56,21 @@ h5{
 .sidenav a:hover {
   color: #f1f1f1;
 }
-
-
+.sidemenubutton{
+  width: 80px;
+  left: -40px;
+  top: 200px;
+  padding-top: 100px;
+  margin-top: 200px;
+  display: block;
+  position: fixed;
+}
+.sidemenubutton:hover{
+  left: -50px;
+  cursor: pointer;
+  content: '\00bb';
+  color: white
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
