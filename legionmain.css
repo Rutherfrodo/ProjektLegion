@@ -17,8 +17,6 @@ body{
  top: 0; /* At the top */
  z-index: 99;
 }
-
-/* Style the navbar links */
 #navbar a {
  float: left;
  color: #d2a10a;
@@ -29,34 +27,25 @@ body{
  line-height: 25px;
  border-radius: 4px;
 }
-
-/* Style the logo */
 #navbar #logo {
  font-size: 35px;
  font-weight: bold;
  transition: 0.4s;
  color: #d2a10a;
 }
-
-/* Links on mouse-over */
 #navbar a:hover {
  background-color: #580303;
  color: #d2a10a;
 
 }
-
-/* Style the active/current link */
 #navbar a.active {
  background-color: dodgerblue;
  color: white;
 }
 
-/* Display some links to the right */
 #navbar-right {
  float: right;
 }
-
-/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
 @media screen and (max-width: 580px) {
  #navbar {
    padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
