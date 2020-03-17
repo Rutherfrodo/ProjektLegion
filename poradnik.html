@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="legionmain.css">
     <link rel="stylesheet" href="poradnik.css">
+    <link rel="stylesheet" href="sidebar.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -13,10 +14,21 @@
     <script src="script/menu.js" async></script>
   </head>
   <body >
-    <div id="navbar">
+    <div id="navbar" >
      <a href="index.html" id="logo">Projekt Legion.pl</a>
      <a>Turboporadnik! Od zera do Fuhrera</a>
+     <div id="navbar-left">
+       <span>
+         <button type="button" name="button">Menu Gry</button>
+         <button type="button" name="button">Dyplomacja</button>
+         <button type="button" name="button">Produkcja</button>
+         <button type="button" name="button">Skład</button>
+         <button type="button" name="button">Technologie</button>
+         <button type="button" name="button">Walka</button>
+       </span>
+     </div>
      <div id="navbar-right">
+
        <a href="https://discord.gg/DttdCq2">Discord</a>
        <a href="https://www.facebook.com/ProjektLegion/">FB</a>
      </div>
@@ -303,6 +315,8 @@
         HoI to nie Europa Universalis, tutaj wiesz z kim będziesz walczyć. Grasz jako GER, Achtung Panzer! nie powinno być główną doktryną. Na wschodzie ZSRR, na zachodzie USA dwie kolejne potęgi pancerne. Lepiej zainwestować w dużą ilość Tank Destroyerów i Anti Tanków</p>
       </div>
     </div>
+
+
     <div class="">
       <img class="sidemenubutton" src="images/poradnikbutton.png" alt="" onclick="openNav()">
       <div id="mySidenav" class="sidenav btn-group-vertical" role="group" onclick="closeNav()">
