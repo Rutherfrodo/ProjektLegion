@@ -28,17 +28,22 @@ url(spqr2.png);
  font-size: 18px;
  line-height: 25px;
  border-radius: 4px;
+ border: solid 1px;
+ border-color: rgba(0, 0, 0, 0.1);
 }
 #navbar #logo {
  font-size: 35px;
  font-weight: bold;
  transition: 0.4s;
  color: #d2a10a;
+
 }
 #navbar a:hover {
  background-color: #580303;
  color: #d2a10a;
-
+ border: solid 1px;
+ border-color: #d2a10a;
+ padding: 12px;
 }
 #navbar a.active {
  background-color: dodgerblue;
