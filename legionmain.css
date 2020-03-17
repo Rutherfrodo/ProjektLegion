@@ -9,7 +9,7 @@ body{
 #navbar {
  overflow: hidden;
  background:
-#7e0505
+#580303
 url(spqr2.png);
  padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
@@ -26,10 +26,32 @@ url(spqr2.png);
  padding: 12px;
  text-decoration: none;
  font-size: 18px;
+ font-weight: bold;
  line-height: 25px;
  border-radius: 4px;
  border: solid 1px;
- border-color: rgba(0, 0, 0, 0.1);
+ border-color: rgba(0, 0, 0, 0.0);
+}
+#navbar span{
+  float: left;
+  color: #d2a10a;
+  background-color: #580303;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+  border-radius: 4px;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, 0.0);
+}
+#navbar span:hover {
+ background-color:#7e0505;
+ color: #d2a10a;
+ border: solid 1px;
+ border-color: #d2a10a;
+ padding: 12px;
 }
 #navbar #logo {
  font-size: 35px;
@@ -39,7 +61,7 @@ url(spqr2.png);
 
 }
 #navbar a:hover {
- background-color: #580303;
+ background-color: #7e0505;
  color: #d2a10a;
  border: solid 1px;
  border-color: #d2a10a;
