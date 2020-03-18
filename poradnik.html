@@ -13,31 +13,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="script/poradnik.js" async></script>
     <script src="script/menu.js" async></script>
+
   </head>
-  <!-- TODO: Adding functions to navbar buttons ==
+  <!-- TODO: Adding functions to navbar buttons DONE ==
+    == ADD smooth scrooling in navbar buttons
     == More cute functions in main index.html
     == Removing old navbar from poradnik.html
     == System logowania i dodawania AARów
     == Sekcja AARów
+    == Scroll indicator in poradnik
   -->
   <body >
     <div id="navbar" >
-     <a href="index.html" id="logo">Projekt Legion.pl</a>
+     <a href="index.html" id="logo">Projekt Legion</a>
      <a id="turbo">Turboporadnik! Od zera do Fuhrera</a>
      <div id="navbar-left">
       <span onclick="menugry();">Menu Gry</span>
       <span onclick="dyplomatic();">Dyplomacja</span>
       <span onclick="production();">Produkcja</span>
-      <span onclick="sklady()";>Skład</span>
+      <span onclick="sklady();">Skład</span>
       <span onclick="resea();">Technologie</span>
       <span onclick="wartaktics();">Walka</span>
-
      </div>
      <div id="navbar-right">
 
        <a href="https://discord.gg/DttdCq2">Discord</a>
        <a href="https://www.facebook.com/ProjektLegion/">FB</a>
      </div>
+     <div class="progress-container">
+       <div class="progress-bar" id="myBar"></div>
+    </div>
     </div>
 
     <div class="container">
@@ -321,18 +326,5 @@
         HoI to nie Europa Universalis, tutaj wiesz z kim będziesz walczyć. Grasz jako GER, Achtung Panzer! nie powinno być główną doktryną. Na wschodzie ZSRR, na zachodzie USA dwie kolejne potęgi pancerne. Lepiej zainwestować w dużą ilość Tank Destroyerów i Anti Tanków</p>
       </div>
     </div>
-
-
-    <div class="">
-      <img class="sidemenubutton" src="images/poradnikbutton.png" alt="" onclick="openNav()">
-      <div id="mySidenav" class="sidenav btn-group-vertical" role="group" onclick="closeNav()">
-          <button type="button" class="btn btn-secondary" onclick="menugry();">Menu gry</button>
-          <button type="button" class="btn btn-secondary" onclick="dyplomacja();">Dyplomacja</button>
-          <button type="button" class="btn btn-secondary" onclick="produkcja();">Produkcja</button>
-          <button type="button" class="btn btn-secondary" onclick="sklad();">Skład</button>
-          <button type="button" class="btn btn-secondary" onclick="technologie();">Technologie</button>
-          <button type="button" class="btn btn-secondary" onclick="walka();">Walka</button>
-      </div>
-</div>
   </body>
 </html>

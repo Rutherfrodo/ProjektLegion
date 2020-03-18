@@ -1,6 +1,6 @@
 body{
 
-  background-image: url(images/tlo.jpg);
+  background-image: url(images/background.jpg);
   background-attachment: fixed;
   overflow-x: hidden;
   background-repeat: no-repeat;
@@ -50,6 +50,7 @@ body{
  border: solid 1px;
  border-color: #d2a10a;
  padding: 12px;
+ cursor: pointer;
 }
 #navbar #logo {
  font-size: 35px;

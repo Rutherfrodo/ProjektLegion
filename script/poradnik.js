@@ -4,10 +4,12 @@ var prod = document.getElementById("produkcja");
 var sklad = document.getElementById("sklad");
 var rese = document.getElementById("technologie");
 var war = document.getElementById("walka");
+
+
 function removingnavbargap(){
   window.scrollBy(0,-100);
 }
- 
+
 
 function menugry(){
   menu.scrollIntoView();
@@ -38,7 +40,6 @@ function wartaktics(){
   war.scrollIntoView();
   removingnavbargap();
 }
-
 /*function menugry() {
   document.getElementById("menugry").style.display = "block";
   document.getElementById("dyplomacja").style.display = "none";
