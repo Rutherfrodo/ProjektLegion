@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="script/poradnik.js" async></script>
     <script src="script/menu.js" async></script>
   </head>
@@ -24,12 +25,12 @@
      <a href="index.html" id="logo">Projekt Legion.pl</a>
      <a id="turbo">Turboporadnik! Od zera do Fuhrera</a>
      <div id="navbar-left">
-      <span>Menu Gry</span>
-      <span>Dyplomacja</span>
-      <span>Produkcja</span>
-      <span>Skład</span>
-      <span>Technologie</span>
-      <span>Walka</span>
+      <span onclick="menugry();">Menu Gry</span>
+      <span onclick="dyplomatic();">Dyplomacja</span>
+      <span onclick="production();">Produkcja</span>
+      <span onclick="sklady()";>Skład</span>
+      <span onclick="resea();">Technologie</span>
+      <span onclick="wartaktics();">Walka</span>
 
      </div>
      <div id="navbar-right">
@@ -100,7 +101,7 @@
 
 
       </div>
-      <div class="card card-body" style="display: none;" id="dyplomacja">
+      <div class="card card-body" id="dyplomacja">
         <h1 class="card-title">Dyplopmacja i handel</h1>
         <img src="poradnik/2.1.jpg" class="card-img-top img-fluid" alt="2.1">
         <p class="card-text">
@@ -156,7 +157,7 @@
             <p class="card-text">Inną formą optymalizacji handlu należy podjąć już na samym początku gry. Nie robimy tego pierwszego dnia ale drugiego, najpóźniej trzeciego. Ma to związek z mechaniką gry, która wszelkie decyzje „zatwierdza” o północy każdego dnia. Po dwóch, trzech dniach państwa AI mają już wykrystalizowane stany surowców i w tym momencie przechodzimy do działania. Klikania jest sporo ale warto. Po prostu po kolei próbujemy sprzedać każdemu państwu cokolwiek co uznajemy, że mamy w nadwyżce. Jedynym wyznacznikiem jest to czy państwo jest chętne do akceptacji takiej umowy. Jeśli dana umowa po jakimś czasie zostanie zerwana, próbujmy ponowić ją ale z mniejszymi wartościami. Oczywiście mając nadwyżkę surowców, można sobie darować taką ekwilibrystykę. Jednak zarobione w ten sposób złoto przyda się bardzo do zakupu zaopatrzenia. Jeśli umów na kupno zaopatrzenia jest dużo, to okaże się, że sami na ten cel nie wydajemy potencjału przemysłowego.
             </p>
       </div>
-      <div class="card card-body" style="display: none;" id="produkcja">
+      <div class="card card-body" id="produkcja">
         <h1 class="card-title">Produkcja</h1>
         <h5 class="card-title">Okno główne, opis podstaw</h5>
 
@@ -215,7 +216,7 @@
 
 
       </div>
-      <div class="card card-body" style="display: none;" id="sklad">
+      <div class="card card-body" id="sklad">
         <h1 class="card-title">Skład Jednostek</h1>
         <p class="card-text"> Gdy otwieramy okno produkcji jednostek lądowych, ukazuje się sporo typów. Z czasem przybędzie ich, dzięki odkrywanym technologiom. Twórcy gry podzielili za pomocą kolorów to jakich typów zalicza się dana jednostka. Czołgi-fioletowy, wszelka piechota – brązowy, artyleria przeciwlotnicza i przeciwpancerna – niebieski, artyleria – czerwony, brygady pomocnicze – zielony, siły porządkowe – szare. Jednak sama kolorystyka nic nam nie da aby efektywnie ułożyć z tego skład dywizji, która może składać się z 4 brygad a w późniejszym etapie gry z 5. Owszem same czołgi w dywizji pancernej brzmi świetnie, ale taka dywizja z racji zajmowanej szerokości frontu ma mankamenty. W takim razie czy jest ta szerokość frontu?</p>
         <p class="card-text"> Szerokość frontu znajduje się na granicy każdej prowincji, gdzie atakując lub broniąc się, stykamy się z wrogiem. W Hoi3 wynosi ona domyślnie 10. Aby wiedzieć która jednostka ma jaką szerokość frontu, należy w poniższej tabelce zwrócić uwagę na 3 kolumnę. Jak widać, tylko czołgi i wszelka piechota ma jakąkolwiek szerokość. Pozostałe brygady traktowane są w grze jako jednostki wsparcia.</p>
@@ -239,7 +240,7 @@
         <img src="poradnik/4.7.jpg" class="card-img-top img-fluid" alt="4.7">
         <p class="card-text">Powyższe składy wynikają z doświadczeń naszych legionowych zmagań. W stosunku do tego co zaoferowali producenci gry wydają się optymalne. Nie bójcie się eksperymentować z własnymi składami. Komu brak pomysłów na swój skład, może skorzystać z dostępnych szablonów przygotowanych w grze.</p>
         </div>
-      <div class="card card-body" style="display: none;" id="technologie">
+      <div class="card card-body" id="technologie">
           <h1 class="card-title">Technologie</h1>
           <h5 class="card-title">Leadership</h5>
           <img src="poradnik/5.1.jpg" class="card-img-top img-fluid" alt="5.1">
@@ -260,7 +261,7 @@
           <img src="poradnik/5.3.jpg" class="card-img-top img-fluid" alt="5.3">
           <p class="card-text">ie wiem czy warto opisywać każdą technologię na co ma wpływ. Bo najechaniu myszą wyraźnie widać zależności i efekty. Uważam że to wystarczy, można samemu się z tym zapoznać należy tylko poświecić niemała chwile na przestudiowanie wszystkich technologii. W przypadku błędów, braków proszę o info </p>
       </div>
-      <div class="card card-body" style="display: none;" id="walka">
+      <div class="card card-body" id="walka">
         <h1 class="card-title">O Walce Słów Kilka</h1>
         <p class="card-text">Zauważyłem, że spora część graczy HoI4 walczy tylko za pomocą AI. Moją opinię pewnie większość zna, ale napisze to jeszcze raz. <b>TYLKO STEROWANIE RĘCZNE.</b></p>
         <p class="card-text">Mam zamiar opisać tu parę mechanik walki. System ten nie zmienił się szczególnie między HoI 3, a HoI 4. Wiec mam nadzieje pomogę większej części ekipy co próbuje ograć Czerwonego Smoka w multi HoI4.</p>
