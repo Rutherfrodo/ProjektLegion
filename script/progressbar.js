@@ -12,7 +12,7 @@ window.onload = function() {
 function myFunction() {
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = 100; // Default value: fill width
+    var scrolled = 100; // Default value: fill width poprawka
 
     // Only if document is scrollable test
     if (height > 0) {
