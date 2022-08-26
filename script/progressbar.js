@@ -14,7 +14,7 @@ function myFunction() {
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = 100; // Default value: fill width
 
-    // Only if document is scrollable
+    // Only if document is scrollable test
     if (height > 0) {
         scrolled = (winScroll / height) * 100;
     }
